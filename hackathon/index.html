@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinCat!</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="https://i.pinimg.com/474x/5b/49/19/5b491937ee86d6ea2d79619e6bd3e2a8.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Metal+Mania&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        background-image: url('./porpol.png');
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center;
+        background-attachment: fixed;
+        font-family: "Chakra Petch", sans-serif;
+        color: #680acc;
+        padding-left: 10px;
+      }
+
+      .heading {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: "Metal Mania", cursive;
+        color:#9e04d1;
+      }
+
+      .heading-box{
+        background: #9dbaf2;
+        border-radius: 5px;
+        width: 60%;
+        margin: 10px auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ed8ebe; 
+        text-align: left;
+        opacity: 0.65;
+      }
+      
+      h1, h2, p, h3, h4, h5 {
+        text-align: center;
+      }
+
+      .content-box {
+        background: #9dbaf2;
+        padding: 10px;
+        border-radius: 15px;
+        width: 60%;
+        margin: 20px auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ed8ebe; 
+        text-align: left;
+        opacity: 0.65;
+      }
+
+      .content-box .flex-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .content-box img {
+        max-width: 200px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .content-box .text-content {
+        flex: 1;
+      }
+
+      a {
+        color: #9dbaf2;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+  
+      .sidenav {
+        position: fixed;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(228, 209, 255, 0.9);
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+        border: 2px solid #ed8ebe;
+        opacity: 0.65;
+      }
+
+      .sidenav a {
+        text-decoration: none;
+        font-weight: bold;
+        font-family: "Chakra Petch", sans-serif;
+        color: #680acc;
+        padding: 10px 20px;
+        border-radius: 15px;
+        background: #3971e3;
+        transition: 0.3s ease-in-out;
+        text-align: center;
+      }
+
+      .sidenav a:hover {
+        background: #ff69b4;
+        color: white;
+        box-shadow: 0px 0px 10px #ff69b4;
+      }
+
+      
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .girlbox {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .hit-counter-box {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        background: #9dbaf2;
+        padding: 15px;
+        border-radius: 15px;
+        width: 180px;
+        text-align: center;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ed8ebe;
+        opacity: 0.65;
+      }
+
+      .hit-counter-box h3 {
+        margin: 0;
+        font-size: 16px;
+        color: #680acc;
+      }
+
+      .hit-counter-box img {
+        margin-top: 2px;
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Side Navbar -->
+    <div class="sidenav">
+      <a href="#about">Use FinCat</a>
+      <a href="#projects">Insights</a>
+      <a href="#contact">Sustainability</a>
+      <a href="https://github.com/vaishl">About FinCat</a>
+    </div>
+    
+    <div class="heading-box">
+      <div class="heading">
+        <h1><i> Welcome to FinCat! ᓚ₍ ^. .^₎</i></h1>
+      </div>
+    </div>
+
+    <div id="about" class="content-box">
+      <div class="heading">
+        <h2>Fincat </h2>
+      </div>
+      <div class="flex-container">
+        <img src="Hi2.gif" alt="A waving GIF">
+        <div class="text-content">
+          <p> Hi, I'm Vish! I'm a 21 y/o MSc Computer Science student from the UK. (´･ᴗ･ ` ) </p>
+          <ul>
+            <li>I love programming, gaming, anime, and writing. </li>
+            <li>On this website, I'll be documenting my journey in programming and project-building!</li>
+            <li>I'm proficient in:
+              <ul>
+                <li>Java(3 years)</li>
+                <li>Python (4+ years!)</li>
+                <li>C#/Unity (2 years)</li>
+              </ul>
+            </li>
+            <li>I'm an aspiring game developer! I mostly work with Unity for PC games.</li>
+            <li>My favourite game is Nier Automata, but I play for my university in casual esports scrims!</li>
+            <li>I'm currently doing an NVIDIA Machine Learning course! I want to train an AI to be used in gaming/esports.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="content-box">
+      <div class="heading">
+        <h2>Insights</h2>
+      </div>
+      <div class="flex-container">
+        <img src="projects.gif" alt="she typingg">
+        <div class="text-content">
+          <h4>Completed/Past Projects</h4>
+          <p>Game Development:</p>
+          <ul>
+            <li><b>Silent Blades</b> - Undergraduate Dissertation Project (2024)</li>
+            <ul>
+              <li>Created the first arc/tutorial of a 3D RPG open-world game.</li>
+              <li>Read my <a href="https://docs.google.com/document/d/1ztahKXaRENgN1rqoS3equ-ZVYCPgGRMfu9Zn9zo0KW0/edit?usp=sharing">Interim Report</a>.</li>
+              <li>Check out my full dissertation <a href="https://docs.google.com/document/d/1IUkRFkAt-nw4CweEawzIvS2UC37MocIdrh3qSLy3sGo/edit?usp=sharing">here</a>.</li>
+            </ul>
+            <li><b>Cozy Farm</b> - 2D Unity Pixel Game (2023)</li>
+            <ul>
+              <li>Created a 2D farming game with pixel art assets and used tilemap to create landscape.</li>
+              <li>Implemented an inventory system, pickup system, and 2D animations.</li>
+            </ul>
+          </ul>
+
+          <p>Java Development:</p>
+          <ul>
+            <li><b>Takeaway Menu System </b> - Agile Group Project (2025)</li>
+            <ul>
+              <li>Created a login system utilising text files as a makeshift database.</li>
+              <li>Read my <a href="https://docs.google.com/document/d/1ztahKXaRENgN1rqoS3equ-ZVYCPgGRMfu9Zn9zo0KW0/edit?usp=sharing">Interim Report</a>.</li>
+              <li>Check out my full dissertation <a href="https://docs.google.com/document/d/1IUkRFkAt-nw4CweEawzIvS2UC37MocIdrh3qSLy3sGo/edit?usp=sharing">here</a>.</li>
+            </ul>
+            <li><b>RefugeEAP website built with Java Spring and SQL</b> - SCRUM Group Project (2023)</li>
+            <ul>
+              <li>Created functional website for refugee students to access english language courses.</li>
+              <li>Revamped website to connect to database allowing staff to contact interested students.</li>
+            </ul>
+          </ul>
+
+          <h4>Current Projects</h4>
+          <ul>
+            <li>Valorant Bot</li>
+            <li>Visual Novel Game for Steam (Passion Project)</li>
+            <li>2D Platformer with Unity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="content-box">
+      <div class="heading">
+        <h3>Sustainability</h3>
+      </div>
+      <div class="flex-container">
+        <img src="tumblr.gif" alt="phone gif">
+        <div class="text-content">
+          <p>You can reach me via <a href="mailto:vaishlod@gmail.com">Email</a> or through my <a href="https://github.com/vaishl">Github</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="content-box">
+      <div class="heading">
+        <h3>About FinCat</h3>
+      </div>
+      <div class="flex-container">
+        <img src="tumblr.gif" alt="phone gif">
+        <div class="text-content">
+          <p>You can reach me via <a href="mailto:vaishlod@gmail.com">Email</a> or through my <a href="https://github.com/vaishl">Github</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="girlbox">
+      <a href="https://lovesick.cafe/grrrl">
+        <img src="madebya-purple.png" alt="girlicon" style="width:50px;height:50px;">
+      </a>
+    </div>
+
+    <div class="hit-counter-box">
+      <h3>Visitor Count</h3>
+      <div class="counter-image">
+        You are visitor #<span id="hitcount"></span>
+        <script>
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              var site_data = JSON.parse(this.responseText);
+              var num_arr = site_data.info.views.toString().split("");
+              var num_str = "";
+              for (i = 0; i < num_arr.length; i++) {
+                num_str += num_arr[i];
+                if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+              }
+              document.getElementById("hitcount").innerHTML = num_str;
+            }
+          };
+          xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=robotgrrl", true);
+          xhttp.send();
+        </script>
+      </div>
+      Last Updated: <span id="lastupdate"></span>
+      <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var site_data = JSON.parse(this.responseText);
+            var date_obj = new Date(site_data.info.last_updated);
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            document.getElementById("lastupdate").innerHTML = days[date_obj.getDay()] + " " + months[date_obj.getMonth()] + "  " + date_obj.getDate() + ",  " + date_obj.getFullYear();
+          }
+        };
+        xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=robotgrrl", true);
+        xhttp.send();
+      </script>
+    </div>
+  </body>
+</html>
