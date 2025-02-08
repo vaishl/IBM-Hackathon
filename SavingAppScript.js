@@ -24,3 +24,10 @@ function buttonClick()
 button.addEventListener('mouseover', buttonHover);
 button.addEventListener('mouseout', buttonReset);
 button.addEventListener('click', buttonClick);
+
+image.src = changeImageLink;
+                  
+setTimeout(() =>
+{
+          image.src = imageLink;
+}, 500);
