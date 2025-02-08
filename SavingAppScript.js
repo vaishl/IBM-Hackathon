@@ -1,8 +1,8 @@
 var button = document.getElementById("saveButton");
 var progressBar = document.getElementById("progress-bar");
           
-saved = 0
-goal = 1000
+var saved = 0
+var goal = 1000
           
 function buttonHover()
 {
