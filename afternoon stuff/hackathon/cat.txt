@@ -1,0 +1,17 @@
+M6951BMW3N07Q1TMFYH1JK31EM
+
+
+curl --request POST \
+--url https://api.climatiq.io/data/v1/estimate \
+--header "Authorization: Bearer M6951BMW3N07Q1TMFYH1JK31EM" \
+--data '{
+        "emission_factor": {
+            "activity_id": "electricity-supply_grid-source_residual_mix",
+            "data_version": "^6"
+        },
+        "parameters":
+            {
+            "energy": 4200,
+            "energy_unit": "kWh"
+            }
+        }'

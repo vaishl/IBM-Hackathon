@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinCat</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="https://i.pinimg.com/474x/5b/49/19/5b491937ee86d6ea2d79619e6bd3e2a8.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Metal+Mania&display=swap" rel="stylesheet">
+
+    <link
+            href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel = "stylesheet"
+            integrity = "sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin = "anonymous"
+        >
+        
+        <link
+            href = "SavingAppStyle.css"
+            rel = "stylesheet"
+        >
+
+        <script
+            src = "jquery-3.7.1.js">
+        </script>
+    <style>
+      body {
+        background-image: url('./blue.png');
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center;
+        background-attachment: fixed;
+        font-family: "Arial", serif;
+        color: #000000;
+        padding-left: 10px;
+      }
+
+      .heading {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: "Arial", serif;
+        color:#9e04d1;
+      }
+
+      .heading-box{
+        background: #9dbaf2;
+        border-radius: 5px;
+        width: 60%;
+        margin: 10px auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ed8ebe; 
+        text-align: left;
+        opacity: 0.85;
+      }
+      
+      h1, h2, p, h3, h4, h5 {
+        text-align: center;
+      }
+
+      .content-box {
+        background: #9dbaf2;
+        padding: 10px;
+        border-radius: 15px;
+        width: 60%;
+        margin: 20px auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ed8ebe; 
+        text-align: left;
+        opacity: 0.85;
+      }
+
+      .content-box .flex-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .content-box img {
+        max-width: 200px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .content-box .text-content {
+        flex: 1;
+      }
+
+      a {
+        color: #9dbaf2;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+  
+      .sidenav {
+        position: fixed;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #9dbaf2;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+        border: 2px solid #ed8ebe;
+        opacity: 0.85;
+      }
+
+      .sidenav a {
+        text-decoration: none;
+        font-weight: bold;
+        font-family: "Chakra Petch", sans-serif;
+        color: #680acc;
+        padding: 10px 20px;
+        border-radius: 15px;
+        background: #3971e3;
+        transition: 0.3s ease-in-out;
+        text-align: center;
+      }
+
+      .sidenav a:hover {
+        background: #ff69b4;
+        color: white;
+        box-shadow: 0px 0px 10px #ff69b4;
+      }
+
+      
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .girlbox {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .hit-counter-box {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        background: #9dbaf2;
+        padding: 15px;
+        border-radius: 15px;
+        width: 180px;
+        text-align: center;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ed8ebe;
+        opacity: 0.65;
+      }
+
+      .hit-counter-box h3 {
+        margin: 0;
+        font-size: 16px;
+        color: #680acc;
+      }
+
+      .hit-counter-box img {
+        margin-top: 2px;
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Side Navbar -->
+    <div class="sidenav">
+      <a href="#use">Use FinCat</a>
+      <a href="#projects">Insights</a>
+      <a href="#sustainability">Sustainability</a>
+      <a href="#about">About FinCat</a>
+    </div>
+    
+    <div class="heading-box">
+      <div class="heading">
+        <h1><i> FinCat! ᓚ₍ ^. .^₎</i></h1>
+      </div>
+    </div>
+
+    <div id="use" class="content-box">
+  
+      <div class="flex-container">
+        <div class="text-content">
+          <div class="container-fluid p-4 bg-primary text-black text-center">
+            <h1>Saving App</h1>
+          </div>
+
+          <img 
+            src="https://c8.alamy.com/comp/W8TGBD/cartoon-white-cat-drawing-with-closed-eyes-simple-and-minimal-sitting-sleeping-cat-doodle-cute-vector-illustration-W8TGBD.jpg" 
+            class="img-fluid mx-auto d-block">
+          
+          <p>£2000</p>
+
+          <div class="progress">
+            <div class="progress-bar"> </div>
+          </div>
+
+          <button class="button" type="button">Save </button>
+
+          <script src="SavingAppScript.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="content-box">
+      <div class="heading">
+        <h2>Insights</h2>
+      </div>
+      
+      </div>
+    </div>
+
+    <div id="sustainability" class="content-box">
+      <div class="heading">
+        <h3>Sustainability</h3>
+      </div>
+      <div class="flex-container">
+        <img src="tumblr.gif" alt="phone gif">
+        <div class="text-content">
+          <p>Here's how your purchases impact sustainability:</p>
+          <table id="carbonTable" border="1">
+            <tr>
+              <th>Item</th>
+              <th>Category</th>
+              <th>Carbon (kg CO₂e)</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      async function loadCarbonData() {
+    try {
+        let response = await fetch("http://127.0.0.1:5000/purchases");
+        let data = await response.json();
+        console.log("Fetched Data:", data); // Debugging log
+
+        let table = document.getElementById("carbonTable");
+
+        if (!data || data.length === 0) {
+            table.innerHTML += `<tr><td colspan="3">No data available</td></tr>`;
+            return;
+        }
+
+        // Skip the first row (header row)
+        data.slice(1).forEach(entry => {
+            let row = `<tr>
+                <td>${entry.item}</td>
+                <td>${entry.category}</td>
+                <td>${entry.carbon_value}</td>
+            </tr>`;
+            table.innerHTML += row;
+        });
+
+    } catch (error) {
+        console.error("Error loading data:", error);
+    }
+}
+      window.onload = loadCarbonData;
+    </script>
+    
+
+    <div id="contact" class="content-box">
+      <div class="heading">
+        <h3>About FinCat</h3>
+      </div>
+      <div class="flex-container">
+        <img src="studycat.gif" alt="phone gif">
+        <div class="text-content">
+          <p> FinCat is a gamified savings app that helps users grow their savings while contributing to a greener planet. With AI-driven smart savings, interactive challenges, and eco-rewards, users make money-saving fun, meaningful, and environmentally impactful.  </p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+  </body>
+</html>
