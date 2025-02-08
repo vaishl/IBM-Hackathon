@@ -1,1 +1,41 @@
+img
+{
+    width: 250px; 
+    height: 300px; 
+    margin-top: 1em; 
+    margin-bottom: 1em
+}
 
+p
+{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em
+}
+
+.progress
+{
+    width: 750px;
+    height: 10px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 1em;
+    margin-bottom: 2em
+}
+
+.progress-bar
+{
+    width: 75%
+}
+
+button
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    width: 250px;
+    height: 30px
+}
