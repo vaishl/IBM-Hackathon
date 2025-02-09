@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinCat</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="https://i.pinimg.com/474x/5b/49/19/5b491937ee86d6ea2d79619e6bd3e2a8.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        background-image: url("./background copy.jpg");
+        font-family: "Georgia", serif;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      .nav {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .nav a:hover {
+        color: #262295;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #090863, #2822cb);
+        color: white;
+        padding: 60px 20px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .hero .action-btn {
+        background-color: white;
+        color: #6b46c1;
+        padding: 15px 30px;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .hero .action-btn:hover {
+        background-color: #f7fafc;
+      }
+
+      .features {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+
+      .feature-card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        text-align: center;
+      }
+
+      .feature-card h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .feature-card p {
+        font-size: 1rem;
+        color: #718096;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 20px 0;
+        border-top: 1px solid #e2e8f0;
+        margin-top: 40px;
+      }
+
+      .footer p {
+        font-size: 0.9rem;
+        color: #718096;
+      }
+
+
+      .input-box, .table-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .input-box input {
+        font-size: 14px;
+        padding: 8px;
+        width: 60%;
+        border: 2px solid #ed8ebe;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .input-box button, .table-box button {
+        background: #3971e3;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+
+      .input-box button:hover, .table-box button:hover {
+        background: #ff69b4;
+        box-shadow: 0px 0px 10px #ff69b4;
+      }
+
+      .output-box {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #680acc;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th, td {
+        border: 2px solid #ed8ebe;
+        padding: 8px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #3971e3;
+        color: white;
+      }
+
+      td input, td select {
+        width: 90%;
+        font-size: 14px;
+        padding: 5px;
+        border: 1px solid #ed8ebe;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1>FinCat</h1>
+        <div class="nav">
+          <a href="#about">Use FinCat</a>
+          <a href="#insights">Insights</a>
+          <a href="#sustainability">Sustainability</a>
+          <a href="https://github.com/vaishl">About FinCat</a>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="hero">
+        <h2>Save Money. Grow Your Cat. Earn Rewards.</h2>
+        <p>FinCat is a gamified savings app that helps you grow your savings while contributing to a greener planet. Make saving fun, meaningful, and impactful.</p>
+        <button class="action-btn">Start Saving Now</button>
+      </div>
+
+      <!-- Features Section -->
+      <div class="features">
+        <div class="feature-card">
+          <h3>AI-Driven Savings</h3>
+          <p>Our AI helps you save smarter by analyzing your spending habits and suggesting ways to save more.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Interactive Challenges</h3>
+          <p>Engage in fun challenges that reward you for saving money and making eco-friendly choices.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Eco-Rewards</h3>
+          <p>Earn rewards for sustainable actions, like reducing your carbon footprint or supporting green initiatives.</p>
+        </div>
+      </div>
+
+      <!-- Insights Section -->
+      <div id="insights" class="feature-card">
+        <h3>Insights</h3>
+        <p>Track your savings progress and get personalized insights to help you reach your financial goals faster.</p>
+      </div>
+
+      <div id="projects" class="content-box">
+        <div class="heading">
+          <h2>Insights</h2>
+        </div>
+        <div class="input-box">
+          <input type="number" id="budgetInput" placeholder="Enter your budget">
+          <input type="number" id="savingInput" placeholder="Enter your saving goal">
+          <button onclick="displayInput()">Submit</button>
+        </div>
+    
+        <div class="output-box">
+          <p id="bOutput"></p>
+          <p id="sOutput"></p>
+        </div>
+      </div>
+    
+      <div class="content-box hidden" id="itemDescription">
+        <h2>Enter Purchased Items</h2>
+        
+        <table id="itemTable">
+          <thead>
+            <tr>
+              <th>Item Name</th>
+              <th>Category</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" class="itemName" placeholder="Item Name"></td>
+              <td>
+                <select class="category">
+                  <option value="General">General</option>
+                  <option value="Food">Food</option>
+                  <option value="Transport">Transport</option>
+                  <option value="Clothing">Clothing</option>
+                  <option value="Entertainment">Entertainment</option>
+                </select>
+              </td>
+              <td><input type="number" class="price" placeholder="Price"></td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <div class="table-box">
+          <button onclick="addItem()">Add New Item</button>
+          <button onclick="displayPurchases()">Display Purchases</button>
+        </div>
+    
+        <div class="output-box hidden" id="purchaseOutput">
+          <h3>Purchased Items</h3>
+          <div id="purchaseList"></div>
+        </div>
+      </div>
+    
+      <script>
+          function displayInput() {
+              let budget = document.getElementById("budgetInput").value;
+              let savings = document.getElementById("savingInput").value;
+    
+              document.getElementById("bOutput").innerText = "Budget:£ " + budget;
+              document.getElementById("sOutput").innerText = "Savings:£ " + savings;
+    
+              document.getElementById("itemDescription").classList.remove("hidden");
+          }
+    
+          function addItem() {
+              let table = document.getElementById("itemTable").getElementsByTagName('tbody')[0];
+              let newRow = table.insertRow();
+              
+              // Item Name Column
+              let itemCell = newRow.insertCell();
+              let itemInput = document.createElement("input");
+              itemInput.type = "text";
+              itemInput.className = "itemName";
+              itemInput.placeholder = "Item Name";
+              itemCell.appendChild(itemInput);
+    
+              // Category Dropdown Column
+              let categoryCell = newRow.insertCell();
+              let categorySelect = document.createElement("select");
+              categorySelect.className = "category";
+              let categories = ["General", "Food", "Transport", "Clothing", "Entertainment"];
+              categories.forEach(category => {
+                  let option = document.createElement("option");
+                  option.value = category;
+                  option.textContent = category;
+                  categorySelect.appendChild(option);
+              });
+              categoryCell.appendChild(categorySelect);
+    
+              // Price Column
+              let priceCell = newRow.insertCell();
+              let priceInput = document.createElement("input");
+              priceInput.type = "number";
+              priceInput.className = "price";
+              priceInput.placeholder = "Price";
+              priceCell.appendChild(priceInput);
+          }
+    
+          function displayPurchases() {
+              let items = document.querySelectorAll(".itemName");
+              let categories = document.querySelectorAll(".category");
+              let prices = document.querySelectorAll(".price");
+              let purchaseList = document.getElementById("purchaseList");
+              
+              purchaseList.innerHTML = ""; // Clear previous data
+    
+              items.forEach((item, index) => {
+                  let itemName = item.value.trim();
+                  let category = categories[index].value;
+                  let price = prices[index].value;
+    
+                  if (itemName && price) {
+                      let itemInfo = `<p><strong>${itemName}</strong> - ${category}: £${price}</p>`;
+                      purchaseList.innerHTML += itemInfo;
+                  }
+              });
+    
+              document.getElementById("purchaseOutput").classList.remove("hidden");
+          }
+      </script>
+      </div>
+      </div>
+
+      <!-- Sustainability Section -->
+      <div id="sustainability" class="feature-card">
+        <h3>Sustainability</h3>
+        <p>Learn how you can make a positive impact on the planet while growing your savings with FinCat.</p>
+      </div>
+
+      <!-- About Section -->
+      <div id="about" class="feature-card">
+        <h3>About Us</h3>
+        <p>At FinCat, we believe that saving money should be just as exciting as spending it! 
+          We're on a mission to change the way people think about saving by combining personal finance with the fun of gaming and the importance of sustainability. 
+          We are passionate about helping individuals take control of their finances while contributing to a greener future.</p>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2023 FinCat. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
